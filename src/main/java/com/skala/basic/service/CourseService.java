@@ -1,12 +1,12 @@
 package com.skala.basic.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.skala.basic.data.CourseResponse;
 
 import lombok.extern.slf4j.Slf4j;
-
-import java.util.List;
 
 @Service
 @Slf4j
@@ -20,7 +20,7 @@ public class CourseService {
     response.setTopics(topics);
 
     String desc = String.format(
-        "%s님이 관심 있는 교과과정: %s",
+        "%s님이 관심 있는 분야: %s",
         name, String.join(", ", topics));
     response.setDescription(desc);
 
