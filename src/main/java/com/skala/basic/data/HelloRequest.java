@@ -7,12 +7,13 @@ import lombok.Data;
 
 @Data
 public class HelloRequest {
-  @NotBlank
-  private String name;
 
-  @Email
-  private String email;
+    @NotBlank
+    private String name;
 
-  @Min(18)
-  private int age;
+    @Email
+    private String email;
+
+    @Min(18)
+    private int age;
 }
