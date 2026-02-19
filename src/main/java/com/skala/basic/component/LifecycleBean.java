@@ -1,11 +1,9 @@
 package com.skala.basic.component;
 
-import org.springframework.stereotype.Component;
-
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-@Component
+// @Component
 public class LifecycleBean {
 
     public LifecycleBean() {
