@@ -4,5 +4,8 @@ import lombok.Data;
 
 @Data
 public class HelloResponse {
-  String message;
+
+    // 성공:0, 실패:1
+    int code;
+    String message;
 }
